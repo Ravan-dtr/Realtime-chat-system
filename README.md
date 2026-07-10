@@ -33,6 +33,14 @@ A modern full-stack real-time chat application that enables users to communicate
 * JSON Web Token (JWT)
 * bcrypt
 
+## 🌐 Deployment
+
+This project is deployed using modern cloud services:
+
+* **Frontend:** Deployed on **Vercel**
+* **Backend:** Deployed on **Render**
+* **Database:** Connected to **MongoDB Atlas**
+
 ## 📂 Project Structure
 
 ```text
@@ -69,6 +77,8 @@ cd Realtime-chat-system
 
 ### 3. Install dependencies
 
+Install root dependencies:
+
 ```bash
 npm install
 ```
@@ -85,6 +95,20 @@ Install backend dependencies:
 ```bash
 cd ../backend
 npm install
+```
+
+## ⚙️ Environment Variables
+
+Create a `.env` file inside the `backend` directory and add the following variables:
+
+```env
+PORT=5001
+
+MONGODB_URI=your_mongodb_atlas_connection_string
+
+JWT_SECRET=your_jwt_secret
+
+NODE_ENV=development
 ```
 
 ## ▶️ Running the Application
@@ -105,13 +129,12 @@ npm run dev
 
 Open your browser and visit:
 
-```
+```text
 http://localhost:5173
 ```
-
 
 ## 👨‍💻 Author
 
 **Sahil Kumar**
 
-GitHub: https://github.com/Ravan-dtr
+Check out: https://frontend-lyart-omega-16.vercel.app/
