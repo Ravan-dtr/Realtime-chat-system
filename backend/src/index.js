@@ -20,7 +20,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173", // Local development
+      "https://frontend-eight-neon-76.vercel.app/", // Your Vercel frontend
+    ],
     credentials: true,
   })
 );
