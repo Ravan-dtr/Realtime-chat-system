@@ -21,8 +21,8 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: [
-      "http://localhost:5173", // Local development
-      "https://frontend-eight-neon-76.vercel.app/", // Your Vercel frontend
+      "http://localhost:5173",
+      "https://frontend-nu-bice-50.vercel.app",
     ],
     credentials: true,
   })
